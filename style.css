@@ -1,0 +1,89 @@
+:root{
+  /* Colors */
+  --module-size: 4px;
+  --mobile: 375px;
+  --desktop: 1440px;
+  /* Primary */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  /* Neutral */
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+
+  --paragraph: 500 .875rem/ 1.125rem 'Montserrat', sans-serif;
+  --copy: 700 .875rem/ 1.125rem 'Montserrat', sans-serif;
+  --headline: 700 2rem/ 2.5rem 'Fraunces', sans-serif;
+}
+
+body{
+  background: var(--cream);
+  color: var(--dark-grayish-blue);
+  font: var(--paragraph);
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+.product{
+  background: var(--white);
+  border-radius: calc(var(--module-size) * 2);
+  max-width: var(--mobile);
+  overflow-y: hidden;
+}
+
+.product-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+/* ========== header do card ========== */
+.product-content header h1,
+.product-content header + p{
+  margin: 0;
+}
+.product-content header h2{
+  color: var(--dark-grayish-blue);
+  font-size: .875rem;
+  letter-spacing: var(--module-size);
+  text-transform: uppercase;
+} 
+.product-content header h1{
+  color: var(--very-dark-blue);
+  font: var(--headline);
+}
+.product-content header + p{
+  line-height: 1.75;
+}
+
+/* ========== preços do card ========== */
+.price{
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.price-promotion{
+  color: var(--dark-cyan);
+  font: var(--headline);
+}
+
+.in-promotion{
+  text-decoration: line-through;
+}
+
+.button{
+  background: var(--dark-cyan);
+  border-radius: calc(var(--module-size) * 2);
+  color: var(--white);
+  display: flex;
+  font: var(--copy);
+  gap: 1rem;
+  padding: 1rem;  
+  place-content: center;
+  text-decoration: none;
+}

@@ -20,19 +20,23 @@
 body{
   background: var(--cream);
   color: var(--dark-grayish-blue);
+  display: flex;
   font: var(--paragraph);
+  padding: 1rem;
+  place-content: center;
 }
 
 img{
-  max-width: 100%;
   display: block;
+  margin: 0;
+  max-width: 100%;
 }
 
 .product{
   background: var(--white);
   border-radius: calc(var(--module-size) * 2);
+  overflow: hidden;
   max-width: var(--mobile);
-  overflow-y: hidden;
 }
 
 .product-content{
@@ -41,6 +45,7 @@ img{
   gap: 1rem;
   padding: 1.5rem;
 }
+
 /* ========== header do card ========== */
 .product-content header h1,
 .product-content header + p{
@@ -80,10 +85,41 @@ img{
   background: var(--dark-cyan);
   border-radius: calc(var(--module-size) * 2);
   color: var(--white);
+  cursor: pointer;
   display: flex;
   font: var(--copy);
   gap: 1rem;
   padding: 1rem;  
   place-content: center;
   text-decoration: none;
+  transition: background 250ms;
+}
+
+.button:hover{
+  background-color: hsl(158, 52%, 21%);
+}
+
+/*  ========== break points ==========*/
+
+@media screen and (min-width: 570px){
+  .product{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: calc(var(--mobile)*2);
+  }
+
+  .procut-image{
+    grid-row: 1/ span 3;
+  }
+
+  .product-image img{
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-content{
+    padding: 2rem;
+  }
+
 }

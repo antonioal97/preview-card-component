@@ -47,21 +47,21 @@ img{
 }
 
 /* ========== header do card ========== */
-.product-content header h1,
-.product-content header + p{
+.product-image h1,
+.product-image + p{
   margin: 0;
 }
-.product-content header h2{
+.product-image h2{
   color: var(--dark-grayish-blue);
   font-size: .875rem;
   letter-spacing: var(--module-size);
   text-transform: uppercase;
 } 
-.product-content header h1{
+.product-image h1{
   color: var(--very-dark-blue);
   font: var(--headline);
 }
-.product-content header + p{
+.product-image + p{
   line-height: 1.75;
 }
 
@@ -124,7 +124,7 @@ img{
 
 }
 
-.attribution {
+/* .attribution {
   position: fixed;
   bottom: 1.5rem;
   z-index: -1;
@@ -134,4 +134,4 @@ img{
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */

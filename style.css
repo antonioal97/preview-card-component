@@ -123,3 +123,15 @@ img{
   }
 
 }
+
+.attribution {
+  position: fixed;
+  bottom: 1.5rem;
+  z-index: -1;
+  font-size: 11px;
+  text-align: center;
+  align-self: flex-end;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

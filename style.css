@@ -20,8 +20,9 @@
 body{
   background: var(--cream);
   color: var(--dark-grayish-blue);
-  display: flex;
+  display: grid;
   font: var(--paragraph);
+  height: 100vh;
   padding: 1rem;
   place-content: center;
 }
@@ -103,7 +104,6 @@ img{
 
 @media screen and (min-width: 570px){
   .product{
-    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: calc(var(--mobile)*2);
